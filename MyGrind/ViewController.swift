@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var circle: SessionTimerView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = .darkMode
+        circle = SessionTimerView(centerPoint: view.center,
+                                           radius: 100,
+                                           lineWidth: 10,
+                                           turnsClockwise: true)
+        view.addSubview(circle)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self,
+                                                          action: #selector(handleDidTapTimerButton))
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    @objc func handleDidTapTimerButton() {
+        circle?.switchTimerToOn()
     }
 
 
 }
+
 

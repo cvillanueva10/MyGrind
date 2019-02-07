@@ -12,6 +12,9 @@
 		56E32718220A23C700584C8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E32716220A23C700584C8F /* Main.storyboard */; };
 		56E3271A220A23C800584C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E32719220A23C800584C8F /* Assets.xcassets */; };
 		56E3271D220A23C800584C8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E3271B220A23C800584C8F /* LaunchScreen.storyboard */; };
+		56E3273D220BEC4D00584C8F /* SessionTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E3273C220BEC4D00584C8F /* SessionTimerView.swift */; };
+		56E32741220BF67300584C8F /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E32740220BF67300584C8F /* TimerStatus.swift */; };
+		56E32743220BFAE300584C8F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E32742220BFAE300584C8F /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		56E32719220A23C800584C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56E3271C220A23C800584C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56E3271E220A23C800584C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E3273C220BEC4D00584C8F /* SessionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerView.swift; sourceTree = "<group>"; };
+		56E32740220BF67300584C8F /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
+		56E32742220BFAE300584C8F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		56E32711220A23C700584C8F /* MyGrind */ = {
 			isa = PBXGroup;
 			children = (
+				56E3273F220BF66300584C8F /* Resources */,
+				56E3273B220BEC3100584C8F /* Views */,
 				56E32712220A23C700584C8F /* AppDelegate.swift */,
 				56E32714220A23C700584C8F /* ViewController.swift */,
 				56E32716220A23C700584C8F /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				56E3271E220A23C800584C8F /* Info.plist */,
 			);
 			path = MyGrind;
+			sourceTree = "<group>";
+		};
+		56E3273B220BEC3100584C8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56E3273C220BEC4D00584C8F /* SessionTimerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56E3273F220BF66300584C8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56E32740220BF67300584C8F /* TimerStatus.swift */,
+				56E32742220BFAE300584C8F /* Colors.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				56E32715220A23C700584C8F /* ViewController.swift in Sources */,
+				56E32743220BFAE300584C8F /* Colors.swift in Sources */,
+				56E32741220BF67300584C8F /* TimerStatus.swift in Sources */,
+				56E3273D220BEC4D00584C8F /* SessionTimerView.swift in Sources */,
 				56E32713220A23C700584C8F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
